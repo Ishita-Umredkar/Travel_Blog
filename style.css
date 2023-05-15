@@ -1,0 +1,492 @@
+@font-face {
+    font-family: AlexBrush;
+    src: url(AlexBrush-Regular.ttf);
+}
+@font-face {
+    font-family: PlayfairDisplay;
+    src: url(PlayfairDisplay-VariableFont_wght.ttf);
+}
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    cursor: default;
+}
+
+
+/* css for home page starts */
+.home {
+    background-image: url(home-bg.jpg);
+    background-repeat:no-repeat;
+    background-size: cover;
+}
+
+/* navigation bar */
+nav {
+    background-color: rgba(255, 255, 255, 0.25);
+    position: fixed;
+    height: 11vh;
+    width: 100vw;
+    top: 0px;
+}
+.logo img{
+    height: 8vh;
+    width:4.5vw;
+}
+.logo {
+    position: absolute;
+    right: 94vw;
+    top: 1vh;
+}
+nav ul {
+    float: right;
+    margin: 2vh 0;
+}
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    padding: 0px 40px;
+    margin:4px 10px
+}
+nav ul li:hover {
+   
+    border: 3px solid white;
+    border-radius: 8px;
+}
+nav ul li a {
+    color: white;
+    font-family: PlayfairDisplay;
+    text-align: center;
+    text-decoration: none;
+    font-size: 180%;
+}
+.active a {
+    color: black;
+    font-weight: bold;
+}
+
+/* welcome page */
+.welcome {
+    height: 85vh;
+    width: 75vw;
+    padding: 15px 0px;
+    text-align: center;
+    color: white;
+    position: relative;
+    margin: auto;
+    margin-top: 13%;
+}
+h3 {
+    font-size: 350%;
+    font-family: PlayfairDisplay;
+    font-weight: lighter;
+    padding:25px 0px;
+    text-shadow: 2px 2px 8px black;
+}
+h2 {
+    font-size: 800%;
+    font-family: AlexBrush;
+    font-weight: lighter;
+    text-shadow: 4px 4px 8px black;
+}
+.button {
+    padding:35px 0px;
+}
+.btn {
+    display: inline-block;
+    margin: 30px 20px;
+    padding: 20px 10px;
+    font-size: 150%;
+    border: 3px solid white;
+    border-radius: 10px;
+    margin: 20px;
+}
+.btn a {
+    text-decoration: none;
+    color: white;
+    font-family: PlayfairDisplay;
+    font-weight: lighter;
+    text-shadow: 2px 2px 8px black;
+}
+.btn:hover {
+    text-decoration: none;
+    background-color: rgba(255, 255, 255, 0.30);
+    color: rgba(255, 255, 255, 0);
+}
+
+/* quote */
+.qoutes {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    margin: 120px 0px;
+}
+.qoutes .container {
+    width: 87vw;
+    margin: 10px;
+    border: 3px solid white;
+    border-radius: 15px;
+    position: absolute;
+    left: 5vw;
+}
+.qoutes .container div {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.10);
+    border-radius: 15px;
+    padding: 60px 0px;
+    margin: 10px;
+}
+.qoutes p {
+    font-size: 280%;
+    color: white;
+    font-family: AlexBrush;
+    font-weight: lighter;
+}
+
+/* animation for sliding quote */
+@keyframes slide {
+    0% {
+        transform: translate(100%, 0);
+    }
+    50% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(-100%, 0);
+    }
+}
+.container {
+    animation: slide 15s linear 0s infinite; 
+}
+
+/* css for home page ends */
+
+
+
+
+
+/* css for explore page starts */
+
+.dest {
+    background-color: #EEEEFF;
+}
+
+/* Navigation Bar */
+.dest nav{
+    z-index: 999;
+    background-color: #F4978E;
+    border: 3px solid black;
+}
+
+.dest .title {
+    position: relative;
+    top:10vh;
+    text-align: center;
+    font-family: AlexBrush;
+    font-size: 700%;
+    text-shadow: 2px 2px 1px black;
+}
+
+/* Content of the blog */
+.dest .head {
+    font-family: AlexBrush;
+    font-size: 420%;
+    text-align: center;
+    padding: 2px 0;
+}
+.dest .box1 {
+    background-color: #b88acb;
+    position: relative;
+    top: 8vh;
+    width: 90vw;
+    height: 210vh;
+    margin: 2vh 6vw;
+    padding:4%;
+    box-shadow: 5px 5px 10px black;
+}
+.dest .box1 .place img {
+    float: right;
+    height: 100%;
+    width:36.8%;
+    border-radius: 15px;
+}
+.dest .place {
+    background-color: #EEEEFF;
+    margin: 3%;
+    border: 2.5px solid black;
+    box-shadow: 7px 7px 25px black;
+    border-radius: 15px;
+    height: 40vh;
+}
+.dest .place h1 {
+    font-family: PlayfairDisplay;
+    font-size: 170%;
+    margin: 7px;
+    padding: 1%;
+}
+.dest .place p {
+    font-family: PlayfairDisplay;
+    font-size: 115%;
+    padding: 1%;
+}
+
+.dest .box2 {
+    background-color: #F4978E;
+    position: relative;
+    top: 25vh;
+    width: 90vw;
+    height: 210vh;
+    margin: 0 6vw;
+    padding:4%;
+    box-shadow: 5px 5px 10px black;
+}
+.dest .box2 img {
+    float: left;
+    height: 100%;
+    width: 36.8%;
+    margin-right: 12px;
+    border-radius: 15px;
+}
+
+.dest .box3 {
+    background-color: #6D829B;
+    position: relative;
+    top: 42vh;
+    width: 90vw;
+    height: 170vh;
+    margin: 0 6vw;
+    padding:4%;
+    box-shadow: 5px 5px 10px black;
+} 
+.dest .box3 .place {
+    height: 30vh;
+}
+
+/* css for explore page ends */
+
+
+
+
+
+/* css for reviews page starts */
+
+.reviews {
+    background-color: #EEEEFF;
+    text-align: center;
+}
+
+/* Navigation Bar */
+.reviews nav{
+    z-index: 999;
+    background-color: #b88acb;
+    border-bottom: 3px solid black;;
+}
+.reviews nav ul li {
+    margin:1px 0;
+}
+
+/* customer review input */
+.box1 {
+    background-color:  #b88acb;
+    position: absolute;
+    top: 20vh;
+    height: 82vh;
+    width: 73vw;
+    margin:0 12vw;
+}
+.box1-border {
+    z-index: 9;
+    position: relative;
+    top: 23vh;
+    height:82vh;
+    width: 73vw;
+    margin: 0 13.6vw;
+    border: 4px solid black;
+}
+.head1 {
+    padding: 7vh 0;
+}
+.head1 h1 {
+    color: black;
+    font-family: AlexBrush;
+    font-size: 280%;
+    text-shadow: 1px 1px 8px white;
+}
+
+/* Filling Information */
+.story form label {
+    font-family: PlayfairDisplay;
+    font-size: 130%;
+    font-weight: bold;
+}
+.story .name {
+    height:5vh;
+    width:22vw;
+}
+.story .email-id {
+    height:5vh;
+    width:22vw;
+}
+.story .content {
+    height: 15vh;
+    width: 50vw; 
+}
+input {
+    padding: 5px;
+    font-family: PlayfairDisplay;
+    font-size: 130%;
+    font-weight: bold;
+    text-align: center;
+    border: 3px solid black;
+}
+.box2 {
+    position:relative;
+    top: 35vh;
+}
+
+/* Customer reviews display */
+.head2 {
+    padding: 2.5vh 0;
+}
+.head2 h1 {
+    color: black;
+    font-family: AlexBrush;
+    font-size: 370%;
+}
+.box2 .reviews div {
+    margin: 6vh 8vw;
+    height: 16vw;
+    border-radius: 30px;
+    box-shadow: 3px 3px 25px black;
+}
+.box2 span img {
+    float: left;
+    height:100%;
+    width:30%;
+    border-radius: 30px;
+}
+.box2 .comment p {
+    text-align: left;
+    font-family: PlayfairDispaly;
+    font-size: 120%;
+    position: relative;
+    left: 12px;
+    right: 12px;
+}
+.box2 .comment h1 {
+    font-family: PlayfairDisplay;
+    font-size: 160%;
+    text-align: center;
+
+}
+.loadmore {
+    padding: 8vh 0;
+}
+.loadmore button {
+    background-color:  #b88acb;
+    height: 6vh;
+    width: 20vw;
+    font-family: PlayfairDisplay;
+    font-size: 150%;
+    border: 2px solid black;
+    border-radius: 8px;
+    box-shadow: 2px 2px 8px black;
+}
+.loadmore button:hover {
+    background-color: transparent; 
+}
+
+/* css for reviews page ends */
+
+
+
+
+/* css for about page starts */
+
+.about {
+    background-color: #EEEEFF;
+}
+
+/* Navigation Bar */
+.about nav {
+    z-index: 999;
+    background-color: #6D829B;
+}
+.about .image img {
+    float: left;
+    position: absolute;
+    top: 22vh;
+    left: 7vw;
+    height: 72vh;
+    width: 28vw;
+    box-shadow: 2px 2px 10px black;
+}
+.about .back {
+    z-index: 0;
+    background-color: #6D829B;
+    float: left;
+    position: absolute;
+    top: 18vh;
+    left: 5vw;
+    height: 72vh;
+    width: 28vw;
+    box-shadow: 2px 2px 10px black;
+}
+.about .overlay {
+    z-index: 9;
+    border: 4px solid black;
+    float: left;
+    position: absolute;
+    top: 26vh;
+    left: 9vw;
+    height: 72vh;
+    width: 28vw;
+}
+.about .content{
+    box-sizing: border-box;
+    height: 70vh;
+    width:40vw;
+    float: right;
+    margin: 0 13vw;
+    position: relative;
+    top: 25vh;
+    padding: 1%;
+    text-align: center;
+
+}
+
+/* content about blog */
+.about .content h1 {
+    font-family: AlexBrush;
+    font-size: 420%;
+}
+.about .content p {
+    font-family: PlayfairDisplay;
+    font-size: 180%;
+}
+
+/* Icons */
+.about .icons {
+    box-sizing: border-box;
+    background-color: #B3BDCA;
+    position: fixed;
+    top: 30vh;
+    right: 0;
+    height: 45vh;
+    width: 5vw;
+    padding:4px
+}
+.about .icons i {
+    font-size: 300%;
+    margin: 12px;
+}
+
+
+
+/* css for about page ends */
+
+
+
+
+
+
